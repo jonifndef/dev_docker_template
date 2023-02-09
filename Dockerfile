@@ -7,50 +7,46 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -y
 RUN apt-get install -y --no-install-recommends \
         bc \
+        bear \
         build-essential \
         bzr \
         ca-certificates \
+        ccache \
+        clang-tidy \
+        clangd-12 \
         cmake \
         cpio \
+        curl \
         cvs \
+        device-tree-compiler \
+        dfu-util \
         file \
+        g++-multilib \
+        gcc-multilib \
         git \
+        gperf \
+        libmagic1 \
         libncurses5-dev \
+        libpython3.10-dev \
+        libsdl2-dev \
+        libssl-dev \
         locales \
         mercurial \
+        ninja-build \
+        openssh-client \
+        python3-dev \
+        python3-pip \
+        python3-setuptools \
+        python3-tk \
+        python3-venv \
+        python3-wheel \
         rsync \
         shellcheck \
         subversion \
+        swig \
         unzip \
         wget \
-        swig \
-        libpython3.10-dev \
-        libssl-dev \
-        neovim \
-        curl \
-        g++ \
-        python3-dev \
-        python3-setuptools \
-        python3-tk \
-        python3-wheel \
-        python3-pip \
-        python3-venv \
-        clangd-12 \
-        clang-tidy \
-        openssh-client \
-        device-tree-compiler \
-        ninja-build \
-        gperf \
-        ccache \
-        dfu-util \
         xz-utils \
-        gcc-multilib \
-        g++-multilib \
-        libsdl2-dev \
-        libmagic1 \
-        python3-venv \
-        bear \
-        clangd-12 \
         && \
     apt-get -y autoremove && \
     apt-get -y clean
