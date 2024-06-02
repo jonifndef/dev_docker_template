@@ -8,6 +8,7 @@ RUN apt-get update -y
 RUN apt-get install -y --no-install-recommends \
         bc \
         bear \
+        bison \
         build-essential \
         bzr \
         ca-certificates \
@@ -21,16 +22,18 @@ RUN apt-get install -y --no-install-recommends \
         device-tree-compiler \
         dfu-util \
         file \
-        g++-multilib \
-        gcc-multilib \
+        flex \
+        gcc-arm-linux-gnueabi \
         git \
         gperf \
+        libelf-dev \
         libmagic1 \
         libncurses5-dev \
         libpython3.10-dev \
         libsdl2-dev \
         libssl-dev \
         locales \
+        lzop \
         mercurial \
         ninja-build \
         openssh-client \
